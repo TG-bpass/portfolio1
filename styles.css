@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 32);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    height: 80px;
+    background-color: rgb(9, 9, 54);
+}
+.left-bar {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.right-bar ul {
+    display: flex;
+    gap: 15px;
+}
+.right-bar ul li {
+    list-style: none;
+}
+.right-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.right-bar ul li a:hover {
+    color: rgb(168, 168, 224);
+    font-size: 1.01rem;
+}
+/* Centered Section */
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+    gap: 40px;
+}
+.left-sec {
+    font-size: 2rem;
+    max-width: 500px;
+}
+.purple {
+    color: rgb(153, 75, 226);
+}
+.right-sec img {
+    max-width: 350px;
+    width: 100%;
+    margin-left: 30px;
+}
+/* Stylish Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    position: relative;
+    z-index: 1;
+}
+.hamburger div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+.hamburger .bar1 {
+    top: 0;
+}
+.hamburger .bar2 {
+    top: 8px;
+}
+.hamburger .bar3 {
+    top: 16px;
+}
+.hamburger.open .bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar2 {
+    opacity: 0;
+}
+.hamburger.open .bar3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+/* About Section */
+.about-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+.about-container h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.about-container p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(9, 9, 54);
+}
+#projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+#projects ul {
+    list-style-type: none;
+}
+#projects ul li {
+    margin-bottom: 20px;
+}
+#projects ul li h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+#projects ul li a {
+    text-decoration: none;
+    color: rgb(153, 75, 226);
+    font-weight: bold;
+}
+#projects ul li a:hover {
+    color: rgb(168, 168, 224);
+}
+/* Services Section */
+#services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(9, 9, 54);
+}
+#services h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background-color: rgb(54, 54, 54); /* Darker gray card background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: rgb(153, 75, 226);
+    transition: color 0.3s ease;
+}
+.service-icon:hover {
+    color: rgb(168, 168, 224);
+}
+.service-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.service-card p {
+    color: #bbb;
+}
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(9, 9, 54);
+}
+#contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+#contact p {
+    font-size: 1.2rem;
+    color: white;
+}
+#contact a {
+    text-decoration: none;
+    color: rgb(153, 75, 226);
+}
+#contact a:hover {
+    color: rgb(168, 168, 224);
+}
+/* Social Media Section */
+.puffer{
+    text-align: center;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.social-links a {
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.1);
+}
+/* LinkedIn Icon */
+.social-links .linkedin:hover {
+    color: #0077b5; /* LinkedIn's brand color */
+}
+/* GitHub Icon */
+.social-links .github:hover {
+    color: #333333; /* GitHub's brand color */
+}
+/* Instagram Icon */
+.social-links .instagram:hover {
+    color: #E4405F; /* Instagram's brand color */
+}
+.social-links a:active {
+    transform: scale(0.98);
+}
+/* Mobile View */
+@media (max-width: 768px) {
+    .right-bar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background-color: rgb(9, 9, 54);
+        text-align: center;
+        transition: left 0.3s;
+        padding-top: 20px;
+    }
+    .right-bar ul.active {
+        left: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .first {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .left-sec {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+    .right-sec img {
+        max-width: 80%;
+        margin-left: 0;
+    }
+    .services-grid {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    #contact {
+        text-align: center;
+    }
+}

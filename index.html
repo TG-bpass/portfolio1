@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Centered Section with Stylish Hamburger Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="left-bar">Varun Garimilla</div>
+        <div class="right-bar">
+            <ul id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="first">
+        <div class="left-sec">
+            Hi, My Name is <span class="purple">Varun</span><br>
+            <div>and I am a passionate</div>
+            <div>Web Developer</div>
+        </div>
+        <div class="right-sec">
+            <img src="image.png" alt="Developer Illustration">
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <h1>About Me</h1>
+        <p>I'm Varun, a student at Vaagdevi Engineering College, Warangal.</p>
+        <p>A passionate web developer eager to learn and grow in the field.</p>
+        <p>As a fresher, I bring creativity and enthusiasm to my projects.</p>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <ul>
+            <li>
+                <h3>College Website</h3>
+                <a href="https://varun624.github.io/college-website/" target="_blank">Click here to visit</a>
+            </li>
+            <li>
+                <h3>YouTube Clone</h3>
+                <a href="https://varun624.github.io/varun-G-web/" target="_blank">Click here to visit</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h1>Services</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-video"></i></div>
+                <h3>Video Editing</h3>
+                <p>video editing services for content creators and businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>If you'd like to get in touch, to reach out!</p>
+        <p>Phone: <a href="tel:+919110355296">9110355296</a></p>
+        <p>Email: <a href="mailto:varungarimilla@gmail.com">varungarimilla@gmail.com</a></p>
+    </section>
+
+    <section id="social">
+        <h1 class="puffer">Connect with Me</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/varun-garimilla-8598192a3/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/varun624?tab=repositories" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=1ev92b6y3pyrm&utm_content=md2age7" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+</main>
+
+<footer style="text-align:center; padding: 20px 0; background-color: rgb(9, 9, 54);">
+    <p style="color: white;">All rights reserved &copy; 2024</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
